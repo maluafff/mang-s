@@ -1,0 +1,165 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif; /* Fonte principal */
+    background-color: #121212; /* Fundo escuro */
+    color: #e0e0e0; /* Texto claro */
+}
+
+/* Estilo do cabeçalho */
+header {
+    background: #1f1f1f; /* Fundo do cabeçalho */
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+h1 {
+    font-family: 'Lobster', cursive; /* Fonte estilizada para o título */
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+/* Navegação */
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #50e3c2; /* Cor dos links */
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #4a90e2; /* Cor ao passar o mouse */
+}
+
+/* Estilo do main */
+main {
+    padding: 20px;
+}
+
+/* Seção de livros */
+.livros {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px; /* Espaçamento entre os cards */
+}
+
+/* Estilo dos artigos dos livros */
+.livro {
+    background: #1a1a1a; /* Fundo dos livros */
+    border: 1px solid #444; /* Borda */
+    border-radius: 12px;
+    padding: 20px;
+    width: 300px;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
+}
+
+.livro:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.7);
+}
+
+.livro img {
+    max-width: 100%;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+/* Estilo dos botões */
+.botoes {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.botoes a {
+    background-color: #2d8370; /* Cor sólida dos botões */
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    margin: 0 5px;
+    transition: background-color 0.3s;
+}
+
+.botoes a:hover {
+    background-color: #4a90e2; /* Cor sólida dos botões ao passar o mouse */
+}
+/* Estilo do pop-up */
+.popup {
+    display: none; /* Inicialmente escondido */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.popup-conteudo {
+    background-color: #222;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    color: #e0e0e0;
+}
+
+.popup-conteudo h2 {
+    margin-bottom: 15px;
+}
+
+.popup-conteudo ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.popup-conteudo button {
+    background-color: #50e3c2;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.popup-conteudo button:hover {
+    background-color: #4a90e2; /* Cor ao passar o mouse */
+}
+
+/* Estilo do rodapé */
+footer {
+    text-align: center;
+    padding: 15px;
+    background-color: #1f1f1f; /* Fundo do rodapé */
+    color: white;
+    margin-top: 20px;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.5);
+}
+
+footer p {
+    margin: 0;
+}

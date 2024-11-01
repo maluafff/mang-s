@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mangás</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Montserrat:wght@400&family=Roboto:wght@400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Mangás</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Início</a></li>
+                <li><a href="#">Sobre</a></li>
+                <li><a href="#">Contatos</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="livros">
+            <article class="livro">
+                <img src="img/OnePiece.jpg" alt="Capa do Livro One Piece">
+                <h2>One Piece Vol.1</h2>
+                <p>A tripulação pirata mais famosa dos quadrinhos finalmente joga sua âncora de novo no Brasil! Com roteiro e arte de Eiichiro Oda, o mangá de maior sucesso de todos os tempos retorna ao país, agora sob a bandeira Planet Mangá, da Panini Comics!</p>
+                <div class="botoes">
+                    <a href="#" onclick="adicionarFavorito('One Piece Vol.1')">Comprar</a>
+                    <a href="#" onclick="adicionarFavorito('One Piece Vol.1')">Adicionar aos Favoritos</a>
+                </div>
+            </article>
+            <article class="livro">
+                <img src="img/Naruto.jpg" alt="Capa do Livro Naruto">
+                <h2>Naruto Clássico Vol.1</h2>
+                <p>Naruto é um jovem shinobi com um talento incorrigível para travessuras. Ele tem um senso de humor selvagem, mas leva muito a sério sua missão de ser o maior ninja do mundo!</p>
+                <div class="botoes">
+                    <a href="#" onclick="adicionarFavorito('Naruto Clássico Vol.1')">Comprar</a>
+                    <a href="#" onclick="adicionarFavorito('Naruto Clássico Vol.1')">Adicionar aos Favoritos</a>
+                </div>
+            </article>
+            <article class="livro">
+                <img src="img/DeathNote.jpg" alt="Capa do Livro Death Note">
+                <h2>Death Note Vol.1</h2>
+                <p>Um caderno com o poder de matar. Light Yagami, um jovem estudante, encontra um Death Note e decide usar esse poder para criar um mundo perfeito.</p>
+                <div class="botoes">
+                    <a href="#" onclick="adicionarFavorito('Death Note Vol.1')">Comprar</a>
+                    <a href="#" onclick="adicionarFavorito('Death Note Vol.1')">Adicionar aos Favoritos</a>
+                </div>
+            </article>
+            <article class="livro">
+                <img src="img/MyHeroAcademia.jpg" alt="Capa do Livro My Hero Academia">
+                <h2>My Hero Academia Vol.1</h2>
+                <p>Em um mundo onde a maioria das pessoas possui superpoderes, Izuku Midoriya é um garoto sem habilidades que sonha em se tornar um herói.</p>
+                <div class="botoes">
+                    <a href="#" onclick="adicionarFavorito('My Hero Academia Vol.1')">Comprar</a>
+                    <a href="#" onclick="adicionarFavorito('My Hero Academia Vol.1')">Adicionar aos Favoritos</a>
+                </div>
+            </article>
+            <article class="livro">
+                <img src="img/AttackOnTitan.jpg" alt="Capa do Livro Attack on Titan">
+                <h2>Attack on Titan Vol.1</h2>
+                <p>Humanos vivem cercados por muros gigantes para se proteger dos Titãs. Eren Yeager, um jovem sonhador, busca a liberdade além dessas paredes.</p>
+                <div class="botoes">
+                    <a href="#" onclick="adicionarFavorito('Attack on Titan Vol.1')">Comprar</a>
+                    <a href="#" onclick="adicionarFavorito('Attack on Titan Vol.1')">Adicionar aos Favoritos</a>
+                </div>
+            </article>
+            <article class="livro">
+                <img src="img/DemonSlayer.jpg" alt="Capa do Livro Demon Slayer">
+                <h2>Demon Slayer Vol.1</h2>
+                <p>Tanjiro Kamado se torna um matador de demônios após sua família ser brutalmente assassinada. Ele embarca em uma jornada para vingar sua família.</p>
+                <div class="botoes">
+                    <a href="#" onclick="adicionarFavorito('Demon Slayer Vol.1')">Comprar</a>
+                    <a href="#" onclick="adicionarFavorito('Demon Slayer Vol.1')">Adicionar aos Favoritos</a>
+                </div>
+            </article>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Mangás, todos os direitos reservados.</p>
+    </footer>
+
+    <!-- Pop-up de Favoritos -->
+    <div id="popupFavoritos" class="popup">
+        <div class="popup-conteudo">
+            <h2>Favoritos</h2>
+            <ul id="listaFavoritos"></ul>
+            <button onclick="fecharPopup()">Fechar</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
